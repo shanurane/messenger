@@ -9,8 +9,6 @@ const ConversationId = async ({ params }) => {
   const conversation = await getConversationById(params.conversationId);
   const messages = await getMessages(params.conversationId);
 
-  console.log("messages are", params.conversationId, "of", messages);
-
   if (!conversation) {
     return (
       <div className="lg:pl-80 h-full">

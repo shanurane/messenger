@@ -17,7 +17,6 @@ const getConversationById = async (conversationId) => {
         user: true,
       },
     });
-    console.log("By Id", conversation);
     return conversation;
   } catch (error) {
     return null;

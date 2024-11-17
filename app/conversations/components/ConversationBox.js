@@ -25,7 +25,6 @@ const ConversationBox = ({ data, selected }) => {
   // if (!isFullConversation) {
   //   return <div>Invalid conversation data</div>; // You can customize the message here
   // }
-  // console.log("data is : ", data);
   const otherUser = useOtherUser(data);
   const session = useSession();
   const router = useRouter();

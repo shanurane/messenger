@@ -6,8 +6,6 @@ import useConversation from "@/app/hooks/useConversation";
 const useOtherUser = (conversations) => {
   const session = useSession();
 
-  // const conversations = conversation | user;
-  // console.log("conversations in others : ", conversations);
   const otherUser = useMemo(() => {
     const currentUserEmail = session?.data?.user?.email;
 
@@ -16,8 +14,6 @@ const useOtherUser = (conversations) => {
     );
 
     return otherUser[0];
-
-    // console.log("others:", otherUser[0]);
   }, [session?.data?.user?.email, conversations.user]);
   return otherUser;
 };

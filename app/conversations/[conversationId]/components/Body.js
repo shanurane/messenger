@@ -9,7 +9,6 @@ import { pusherClient } from "@/app/libs/pusher";
 import { find } from "lodash";
 
 const Body = ({ initialMessages }) => {
-  console.log("initial messages are : ", initialMessages);
   const [messages, setMessages] = useState(initialMessages);
   const bottomRef = useRef(null);
 

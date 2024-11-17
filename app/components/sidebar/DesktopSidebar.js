@@ -12,7 +12,6 @@ import SettingsModal from "./SettingsModal";
 const DesktopSidebar = ({ currentUser }) => {
   const routes = useRoutes();
   const [isOpen, setIsOpen] = useState(false);
-  console.log(currentUser);
   return (
     <>
       <SettingsModal

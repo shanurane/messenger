@@ -46,7 +46,6 @@ const AuthForm = () => {
   });
 
   const onSubmit = (data) => {
-    console.log(data);
     setIsLoading(true);
     if (variant === "REGISTER") {
       // Axios Register

@@ -11,7 +11,6 @@ import AvatarGroup from "@/app/components/AvatarGroup";
 import useActiveList from "@/app/hooks/useActiveList";
 
 const Header = ({ conversation }) => {
-  //   console.log("conversation : ", conversation);
   const otherUser = useOtherUser(conversation);
   const [drawerOpen, setDrawerOpen] = useState(false);
 

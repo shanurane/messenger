@@ -6,7 +6,6 @@ import { NextResponse } from "next/server";
 export async function POST(request) {
   try {
     const body = await request.json();
-    console.log(body);
     const { email, name, password } = body;
 
     if (!email || !name || !password) {
@@ -23,7 +22,6 @@ export async function POST(request) {
     });
     return NextResponse.json(user);
   } catch (error) {
-    console.log(error, "REGISTRATION_ERROR");
     return new NextResponse("Internal Error", { status: 500 });
   }
 }
