@@ -12,7 +12,7 @@ const MobileItem = ({ href, icon: Icon, active, onClick }) => {
 
   return (
     <Link
-      onClick={handleClick}
+      onClick={onClick}
       href={href}
       className={clsx(
         `group flex gap text-sm leading-6 font-semibold w-full justify-center p-4 text-gray-600 hover:text-black hover:bg-gray-100`,
